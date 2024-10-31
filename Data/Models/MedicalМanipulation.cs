@@ -10,11 +10,11 @@ namespace MyHomeNurse.Data.Models
         public int Id { get; set; }
 
         [Required]
-        [Comment("Name of the manipulation")]
-        public string ManipulationName { get; set; }
+        [Comment("Manipulation type")]
+        public string ManipulationName { get; set; } = null!; 
 
         [Required]
-        [Comment("Price per one manipulation")]
+        [Comment("Price per manipulation")]
         public decimal Price { get; set; }
 
         [Comment("Notes for manipulation if it's needed")]
